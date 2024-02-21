@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.headings{
+    text-align: center;
+    color: #4caf50;
+    font-size: 40px;
+}
+
+.btn{
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+#iconsCourses{
+    font-size: 60px;
+}
+
+.line{
+    display: block;
+    width: 25px;
+    background-color: #fff;
+    height: 3px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.burgermenu{
+    display: none;
+}
+
+.mobileversion{
+    background-color: #000a14;
+    display: none;
+}
+
+.mobileversion.active{
+    display: block;
+}
+
+.mobileversion .links{
+    text-align: center;
+    padding: 10px;
+}
+
+.mobileversion .links ul li {
+    margin: 15px;
+}
+
+.mobileversion .links ul li a{
+    color: #fff;
+}
+
+/*Navigaton*/
+    .nav{
+        display: flex;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+        position: sticky;
+        padding: 15px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000a14;
+    }
+
+    .nav .logotxt{
+        font-size: 30px;
+        color: #4caf50;
+    }
+
+    .nav .links ul li{
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .nav .links a{
+        font-size: 18;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .nav .links  ul li a:hover{
+        color: #4caf50;
+    }
+/*Navigaton*/
+
+/*Hero section*/
+    .hero{
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/Background_.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;;
+        padding-top: 160px;
+        padding-bottom: 160px;
+    }
+
+    .hero .wrapper{
+        margin: 0 auto;
+        max-width: 1260px;
+    }
+
+   .hero .hero-content h1{
+       font-size: 60px;
+       color: #fff;
+       font-weight: 700;
+   }
+
+   .hero .hero-content h1 span{
+    font-size: 55px;
+    color: #4caf50;
+    font-weight: 700;
+   }
+
+   .hero .hero-content p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+   }
+/*Hero section*/
+
+/*About Us section*/
+   .aboutUS{
+    background-color: #000a14;
+    padding: 30px;
+   }
+
+   .aboutUS h2{
+    color: #fcfcfc;
+    font-size: 40px;
+    font-weight: 800;
+   }
+
+   .aboutUS p{
+    color: #fff;
+    padding-bottom: 30px;
+   }
+
+   .aboutUs-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+   }
+
+   .aboutUs-content img{
+    max-width: 80vh;
+   }
+/*About Us section*/
+
+/*Our Courses section*/
+   .OurCourses{
+    background-color: #00070e;
+    padding: 30px;
+   }
+
+   .OurCourses .content{
+    margin: 0 auto;
+    max-width: 1260px;
+    padding: 10px;
+   }
+
+   .OurCourses .content .box{
+        display: flex;
+        flex-direction: row;
+        max-height: auto;
+        margin: 10px;
+   }
+
+   .OurCourses .content .box .card{
+    background-color: #ffffff0e;
+    padding: 25px;
+    margin: 25px;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+   }
+
+   .OurCourses .content .box .card:hover{
+    opacity: 0.8;
+   }
+
+   /* .card img{
+    width: 10vh;
+   } */
+
+   .card h3{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    padding-bottom: 20px;
+   }
+
+   .card p{
+    color: #fff;
+    font-weight: 300;
+    padding-bottom: 20px;
+   }
+/*Our Courses section*/
+
+/*Contact Us section*/
+   .contactUS{
+        background-color: #000a14;
+        padding: 30px;
+   }
+
+   .contactUS .wrapper{
+     margin: 0 auto;
+     max-width: 1260px;
+   }
+
+   .contactUS .content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+   }
+
+   .contactUS .content .text h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 20px;
+   }
+
+   .contactUS .content .text p{
+    color: #fff;
+    font-weight: 600;
+   }
+
+   .contactUS .content .text .spanB{
+    color: #4caf50;
+   }
+
+   .contactUS .content form{
+        display: flex;
+        flex-direction: column;
+   }
+
+   .contactUS .content form input{
+        margin: 10px;
+        height: 30px;
+        width: 400px;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid #4caf50;
+   }
+
+   .contactUS .content form input::placeholder{
+        color: #fff;
+        font-weight: 400;
+    }
+
+   .contactUS .content form textarea{
+        margin-left: 10px;
+        width: 400px;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid #4caf50;
+        margin-bottom: 15px;
+   }
+
+   .contactUS .content form textarea::placeholder{
+    color: #fff;
+    font-weight: 400;
+}
+/*Contact Us section*/
+
+/*Footer*/
+    .footer{
+        background-color: #00070e;
+        padding: 30px;
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+        font-size: 20px;
+    }
+/*Footer*/
+
+@media  screen and (max-width: 768px) {
+    .nav .links{
+        display: none;
+    }
+
+    .logo{
+        text-align: center;
+    }
+
+    .burgermenu{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hero .wrapper{
+        padding: 30px;
+    }
+
+    .hero .hero-content h1{
+        font-size: 30px;
+    }
+ 
+    .hero .hero-content h1 span{
+     font-size: 25px;
+    }
+
+    .aboutUs-content{
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+    }
+
+    .aboutUs-content img{
+    max-width: 50vh;
+    padding-top: 50px;
+    }
+
+    .OurCourses .content{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .OurCourses .content .box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .OurCourses .content .box .card{
+        width: 100%;
+    }
+
+    .contactUS .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+
+       .contactUS .content .text p{
+        padding-bottom: 20px;
+       }
+  }
+  
